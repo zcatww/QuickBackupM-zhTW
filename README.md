@@ -1,6 +1,6 @@
 # QuickBackupM
 
-此版本為QuickBackupM繁體中文版，zh_cn.yml已被簡體中文替代成繁體中文。
+此版本為QuickBackupM繁體中文版，zh_cn.yml內簡體中文替代成繁體中文。
 
 > [!NOTE]
 > QuickBackupM 已进入维护模式，只进行 bug 修复，不再增加新功能
