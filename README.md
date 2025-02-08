@@ -1,6 +1,7 @@
 # QuickBackupM-zhTW
 
 此版本為QuickBackupM繁體中文版，zh_cn.yml內簡體中文替代成繁體中文。
+若有翻譯錯誤請自行修改。感謝
 
 [English](https://github.com/TISUnion/QuickBackupM/blob/master/README_en.md)
 
