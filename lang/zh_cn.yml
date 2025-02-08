@@ -1,0 +1,93 @@
+quick_backup_multi:
+  help_message: |
+    ------ {1} v{2} ------
+    一个支持多槽位的快速§a備份§r&§c回檔§r插件
+    §d【格式說明】§r
+    §7{0}§r 顯示幫助訊息
+    §7{0} make §e[<cmt>]§r 創建一个儲存至槽位§61§r的§a備份§r。§e<cmt>§r為可選注釋
+    §7{0} back §6[<slot>]§r §c回檔§r為槽位§6<slot>§r的存檔。默認為槽位§61§r
+    §7{0} del §6<slot>§r §c删除§r槽位§6<slot>§r的存檔
+    §7{0} rename §6<slot>§r §e<cmt>§r §b修改§r槽位§6<slot>§r的注釋，即重命名這一槽位
+    §7{0} confirm§r 再次確認是否進行§c回檔§r
+    §7{0} abort§r 在任何時候鍵入此指令可中斷§c回檔§r
+    §7{0} list§r 顯示各槽位的存檔信息
+    §7{0} reload§r 重新加載配置文件
+    當§6<slot>§r未被指定時默認選擇槽位§61§r
+
+  second: "{0}秒"
+  minute: "{0}分鐘"
+  hour: "{0}小時"
+  day: "{0}天"
+  slot_info: "日期: {0}; 注釋: {1}"
+  empty_comment: §7空§r
+  unknown_slot: 槽位輸入錯誤，應輸入一个位於[{0}, {1}]的數字
+  empty_slot: 槽位輸入錯誤，槽位§6{0}§r為空
+
+  lock.warning: 正在{0}中，請等待操作執行完成
+  operations:
+    delete: §a删除槽位§r
+    create: §a備份§r
+    restore: §c回檔§r
+    rename: §9重命名§r
+
+  delete_backup:
+    success: 删除槽位§6{0}§r§a完成§r
+    fail: "删除槽位§6{0}§r§4失敗§r，錯誤代碼: {1}"
+
+  rename_backup:
+    success: 重命名槽位§6{0}§r§a完成§r
+    fail: "重命名槽位§6{0}§r§4失敗§r，錯誤代碼: {1}"
+
+  create_backup:
+    start: §a備份§r中...請稍等
+    abort.plugin_unload: 插件重载，§a備份§r中斷！
+    abort.no_slot: 未找到可用槽位，§a備份§r中斷！
+    success: §a備份§r完成，耗時§6{0}§r秒
+    fail: §a備份§r失敗，錯誤代碼{0}
+
+  restore_backup:
+    echo_action: 準備將存檔恢復至槽位§6{0}§r，{1}
+    confirm_hint: 使用§7{0} confirm§r 確認§c回檔§r
+    confirm_hover: 點擊確認
+    abort_hint: §7{0} abort§r 取消
+    abort_hover: 點擊取消
+
+  confirm_restore.nothing_to_confirm: 沒有什麼需要確認的
+
+  do_restore:
+    countdown.intro: 10秒後關閉伺服器§c回檔§r
+    countdown.text: 還有{0}秒，將§c回檔§r為槽位§6{1}§r，{2}
+    countdown.hover: 點擊終止回檔！
+    abort: §c回檔§r被中斷！
+
+  trigger_abort.abort: 終止操作！
+
+  list_backup:
+    title: §d【槽位信息】§r
+    slot:
+      header: "[槽位§6{0}§r]"
+      protection: "存檔保護時長: {0}"
+      restore: 點擊回檔至槽位§6{0}§r
+      delete: 點擊删除槽位§6{0}§r
+    total_space: "備份占用總空間: §a{0}§r"
+
+  print_help:
+    hotbar: §d【快捷操作】§r
+    click_to_create:
+      text: ">>> §a點我創建一個備份§r <<<"
+      hover: 記得修改注釋
+      command: "{0} make 我是一个注釋"
+    click_to_restore:
+      text: ">>> §c點我回檔至最近的備份§r <<<"
+      hover: 也就是回檔到第一個槽位
+      command: "{0} back"
+
+  unknown_command:
+    text: 參數錯誤！請輸入§7{0}§r以獲取插件訊息
+    hover: 點擊查看幫助
+  command:
+    permission_denied: 權限不足
+    wrong_slot: 槽位輸入錯誤
+  register:
+    summory_help: §a備份§r/§c回檔§r，§6{0}§r槽位
+    show_help: 點擊查看幫助訊息
