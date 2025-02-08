@@ -1,4 +1,4 @@
-# QuickBackupM
+# QuickBackupM-zhTW
 
 此版本為QuickBackupM繁體中文版，zh_cn.yml內簡體中文替代成繁體中文。
 
